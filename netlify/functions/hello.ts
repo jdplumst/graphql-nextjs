@@ -1,10 +1,8 @@
 import type { Config, Context } from "@netlify/functions";
 import { env } from "~/env";
 
-// eslint-disable-next-line @typescript-eslint/require-await
-export default async function handler(_req: Request, _context: Context) {
+export default function handler(_req: Request, _context: Context) {
   const e = env.NODE_ENV;
-  console.log(e);
   if (e === "development") {
     return new Response("Hello, development!");
   } else if (e === "test") {

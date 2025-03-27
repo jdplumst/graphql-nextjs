@@ -1,0 +1,17 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[dev]
+  command = "pnpm dev"
+  port = 8888
+  framework = "next"
+  functions = "netlify/functions"
+  publish = ".next"
+  autoLaunch = false 
+
+[[redirects]]
+  from = "/graphql"
+  to = "/.netlify/functions/graphql"
+  status = 200
+  force = true

@@ -20,6 +20,9 @@
     "db:migrate": "drizzle-kit migrate"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.5",
+    "@apollo/server": "^4.11.3",
+    "@as-integrations/aws-lambda": "^3.1.0",
     "@libsql/client": "^0.14.0",
     "@netlify/functions": "^3.0.4",
     "@t3-oss/env-nextjs": "^0.10.1",
@@ -29,6 +32,8 @@
     "drizzle-orm": "^0.39.1",
     "eslint-plugin-drizzle": "^0.2.3",
     "geist": "^1.3.0",
+    "graphql": "^16.10.0",
+    "graphql-tag": "^2.12.6",
     "lucide-react": "^0.473.0",
     "next": "^15.0.1",
     "react": "^18.3.1",

@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
+import { ApolloWrapper } from "~/lib/apollo-provider";
 
 export const metadata: Metadata = {
   title: "Create Jaydee App",
@@ -12,8 +13,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="h-full">
+      <body className="h-full">
+        <ApolloWrapper>{children}</ApolloWrapper>
+      </body>
     </html>
   );
 }
